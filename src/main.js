@@ -1,10 +1,11 @@
 import Vue from 'vue';
+// import store from './store';
+import 'document-register-element/build/document-register-element';
+import vueCustomElement from 'vue-custom-element';
+
 import App from './App.vue';
-import store from './store';
 
 Vue.config.productionTip = false;
+Vue.use(vueCustomElement);
 
-new Vue({
-  store,
-  render: h => h(App),
-}).$mount('#app');
+Vue.customElement('vue-audio-player', App);

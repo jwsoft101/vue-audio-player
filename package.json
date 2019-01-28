@@ -9,7 +9,9 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "document-register-element": "^1.13.1",
     "vue": "^2.5.21",
+    "vue-custom-element": "^3.2.6",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
